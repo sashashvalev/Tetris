@@ -1,6 +1,17 @@
-#include "ConstList.h"
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
+#include <ctime>
+#include <cstdlib>
+#include <sstream>
+#include <iostream>
+
+//#include "ConstList.h"
 #include "drawQuad.h"
 #include "ShapeIndexes.h"
+
+const int WIDTH = 10;
+const int HEIGHT = 20;
 
 class PartFigure
 {
