@@ -1,3 +1,5 @@
+#pragma once
+
 enum ShapeIndexes { I = 0, O = 4, S = 8, Z = 12, T = 16, L = 20, J = 24 };
 bool SHAPES[][4][4] = {
 	// I

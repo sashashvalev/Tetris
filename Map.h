@@ -1,5 +1,3 @@
-#include "ConstList.h"
-#include "ShapeIndexes.h"
 #include "PartFigure.h"
 
 class Map
@@ -84,7 +82,7 @@ public:
 		for (int i = 0; i < HEIGHT; i++)
 			for (int m = 0; m < WIDTH; m++)
 				if (data[i][m])
-					drawQuad(window, m * SIZE, i * SIZE, sf::Color::Green);
+					drawQuad(window, m * SIZE, i * SIZE, sf::Color::White);
 	}
 
 };

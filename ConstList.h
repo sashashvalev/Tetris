@@ -5,7 +5,18 @@
 #include <cstdlib>
 #include <sstream>
 #include <iostream>
+#pragma once
 
-const int WIDTH = 10;
-const int HEIGHT = 20;
-const int SIZE = 32;
+sf::Color colors[6] =
+{
+	sf::Color(255,0,0),
+	sf::Color(0,255,0),
+	sf::Color(0,0,255),
+	sf::Color(255,0,255),
+	sf::Color(0,255,255),
+	sf::Color(255,255,0)
+};
+
+static const int WIDTH = 10;
+static const int HEIGHT = 20;
+static int SIZE = 32;

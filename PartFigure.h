@@ -1,6 +1,7 @@
 #include "ConstList.h"
 #include "ShapeIndexes.h"
 #include "drawQuad.h"
+#pragma once
 
 class PartFigure
 {
@@ -26,7 +27,7 @@ public:
 	int color;
 	void generate()
 	{
-		int g = (rand() % 7) * 4;
+		int g = (rand() % 6) * 4;
 		shapeIndex = (ShapeIndexes)g;
 		color = g / 4;
 		fillData();
@@ -72,7 +73,7 @@ public:
 			for (int m = 0; m < 4; m++)
 				if (data[i][m])
 				{
-					drawQuad(window, (m + posX) * SIZE, (i + posY) * SIZE, sf::Color::Green);
+					drawQuad(window, (m + posX) * SIZE, (i + posY) * SIZE, colors[color]);
 				}
 	}
 

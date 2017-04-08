@@ -1,5 +1,5 @@
-//#include "ConstList.h"
-const int SIZE = 32;
+#include "ConstList.h"
+#pragma once
 
 void drawQuad(sf::RenderWindow & window, float x, float y, sf::Color c)
 {
